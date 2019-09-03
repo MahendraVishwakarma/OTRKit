@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
       
-        let strMessage = "hi hello guys. how are you. press A for Good. press B for Sad. press C for restless"
+        let strMessage = "hello guys. how are you. press A for Good. press B for Sad. press C for restless. press D for your feeling what ever you have"
         let msgData = strMessage.data(using: .utf8)
         let keyData = NSMutableData(length: 16)
         let ivData = NSMutableData(length: 16)
