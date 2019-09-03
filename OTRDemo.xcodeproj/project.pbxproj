@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		803F2584231E4EE000DCBBE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F2583231E4EE000DCBBE2 /* AppDelegate.swift */; };
+		803F2586231E4EE000DCBBE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F2585231E4EE000DCBBE2 /* ViewController.swift */; };
+		803F2589231E4EE000DCBBE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803F2587231E4EE000DCBBE2 /* Main.storyboard */; };
+		803F258B231E4EE200DCBBE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 803F258A231E4EE200DCBBE2 /* Assets.xcassets */; };
+		803F258E231E4EE200DCBBE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803F258C231E4EE200DCBBE2 /* LaunchScreen.storyboard */; };
+		803F25B3231E4EEF00DCBBE2 /* OTRKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 803F2596231E4EEE00DCBBE2 /* OTRKit.m */; };
+		803F25B4231E4EEF00DCBBE2 /* OTRTLV.m in Sources */ = {isa = PBXBuildFile; fileRef = 803F2597231E4EEE00DCBBE2 /* OTRTLV.m */; };
+		803F25B5231E4EEF00DCBBE2 /* OTRHTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 803F259C231E4EEE00DCBBE2 /* OTRHTTPMessage.m */; };
+		803F25B6231E4EEF00DCBBE2 /* OTRDataIncomingTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 803F259D231E4EEE00DCBBE2 /* OTRDataIncomingTransfer.m */; };
+		803F25B7231E4EEF00DCBBE2 /* NSData+OTRDATA.m in Sources */ = {isa = PBXBuildFile; fileRef = 803F259E231E4EEE00DCBBE2 /* NSData+OTRDATA.m */; };
+		803F25B8231E4EEF00DCBBE2 /* OTRDataOutgoingTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 803F259F231E4EEE00DCBBE2 /* OTRDataOutgoingTransfer.m */; };
+		803F25B9231E4EEF00DCBBE2 /* OTRDataTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 803F25A0231E4EEE00DCBBE2 /* OTRDataTransfer.m */; };
+		803F25BA231E4EEF00DCBBE2 /* OTRDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 803F25A7231E4EEE00DCBBE2 /* OTRDataHandler.m */; };
+		803F25BB231E4EEF00DCBBE2 /* OTRDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 803F25AA231E4EEE00DCBBE2 /* OTRDataRequest.m */; };
+		803F25BC231E4EEF00DCBBE2 /* OTRDataGetOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 803F25AB231E4EEE00DCBBE2 /* OTRDataGetOperation.m */; };
+		803F25BD231E4EEF00DCBBE2 /* OTRFingerprint.m in Sources */ = {isa = PBXBuildFile; fileRef = 803F25AC231E4EEE00DCBBE2 /* OTRFingerprint.m */; };
+		803F25BE231E4EEF00DCBBE2 /* OTRCryptoUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 803F25AF231E4EEE00DCBBE2 /* OTRCryptoUtility.m */; };
+		803F25BF231E4EEF00DCBBE2 /* OTRErrorUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 803F25B2231E4EEE00DCBBE2 /* OTRErrorUtility.m */; };
+		803F25CD231E502400DCBBE2 /* gcrypt-mpih-mul2.S.diff in Resources */ = {isa = PBXBuildFile; fileRef = 803F25C2231E502400DCBBE2 /* gcrypt-mpih-mul2.S.diff */; };
+		803F25CE231E502400DCBBE2 /* gcrypt-mpih-sub1.S.diff in Resources */ = {isa = PBXBuildFile; fileRef = 803F25C3231E502400DCBBE2 /* gcrypt-mpih-sub1.S.diff */; };
+		803F25CF231E502400DCBBE2 /* gcrypt-mpih-add1.S.diff in Resources */ = {isa = PBXBuildFile; fileRef = 803F25C4231E502400DCBBE2 /* gcrypt-mpih-add1.S.diff */; };
+		803F25D0231E502400DCBBE2 /* gcrypt-mpih-mul3.S.diff in Resources */ = {isa = PBXBuildFile; fileRef = 803F25C5231E502400DCBBE2 /* gcrypt-mpih-mul3.S.diff */; };
+		803F25D1231E502400DCBBE2 /* gcrypt-mpih-mul1.S.diff in Resources */ = {isa = PBXBuildFile; fileRef = 803F25C6231E502400DCBBE2 /* gcrypt-mpih-mul1.S.diff */; };
+		803F25D2231E502400DCBBE2 /* gcrypt-disable-tests.diff in Resources */ = {isa = PBXBuildFile; fileRef = 803F25C7231E502400DCBBE2 /* gcrypt-disable-tests.diff */; };
+		803F25D3231E502400DCBBE2 /* build-gcrypt.sh in Resources */ = {isa = PBXBuildFile; fileRef = 803F25C8231E502400DCBBE2 /* build-gcrypt.sh */; };
+		803F25D4231E502400DCBBE2 /* build-otr.sh in Resources */ = {isa = PBXBuildFile; fileRef = 803F25C9231E502400DCBBE2 /* build-otr.sh */; };
+		803F25D5231E502400DCBBE2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 803F25CA231E502400DCBBE2 /* README.md */; };
+		803F25D6231E502400DCBBE2 /* build-all.sh in Resources */ = {isa = PBXBuildFile; fileRef = 803F25CB231E502400DCBBE2 /* build-all.sh */; };
+		803F25D7231E502400DCBBE2 /* build-gpg-error.sh in Resources */ = {isa = PBXBuildFile; fileRef = 803F25CC231E502400DCBBE2 /* build-gpg-error.sh */; };
+		803F25F2231E553D00DCBBE2 /* libotr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 803F25EF231E553D00DCBBE2 /* libotr.a */; };
+		803F25F3231E553D00DCBBE2 /* libgcrypt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 803F25F0231E553D00DCBBE2 /* libgcrypt.a */; };
+		803F25F4231E553D00DCBBE2 /* libgpg-error.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 803F25F1231E553D00DCBBE2 /* libgpg-error.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		803F2580231E4EE000DCBBE2 /* OTRDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTRDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		803F2583231E4EE000DCBBE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		803F2585231E4EE000DCBBE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		803F2588231E4EE000DCBBE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		803F258A231E4EE200DCBBE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		803F258D231E4EE200DCBBE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		803F258F231E4EE200DCBBE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		803F2596231E4EEE00DCBBE2 /* OTRKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTRKit.m; sourceTree = "<group>"; };
+		803F2597231E4EEE00DCBBE2 /* OTRTLV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTRTLV.m; sourceTree = "<group>"; };
+		803F2598231E4EEE00DCBBE2 /* OTRFingerprint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTRFingerprint.h; sourceTree = "<group>"; };
+		803F2599231E4EEE00DCBBE2 /* OTRTLVHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTRTLVHandler.h; sourceTree = "<group>"; };
+		803F259A231E4EEE00DCBBE2 /* OTRKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTRKit.h; sourceTree = "<group>"; };
+		803F259C231E4EEE00DCBBE2 /* OTRHTTPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTRHTTPMessage.m; sourceTree = "<group>"; };
+		803F259D231E4EEE00DCBBE2 /* OTRDataIncomingTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTRDataIncomingTransfer.m; sourceTree = "<group>"; };
+		803F259E231E4EEE00DCBBE2 /* NSData+OTRDATA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+OTRDATA.m"; sourceTree = "<group>"; };
+		803F259F231E4EEE00DCBBE2 /* OTRDataOutgoingTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTRDataOutgoingTransfer.m; sourceTree = "<group>"; };
+		803F25A0231E4EEE00DCBBE2 /* OTRDataTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTRDataTransfer.m; sourceTree = "<group>"; };
+		803F25A1231E4EEE00DCBBE2 /* OTRDataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTRDataHandler.h; sourceTree = "<group>"; };
+		803F25A2231E4EEE00DCBBE2 /* OTRDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTRDataRequest.h; sourceTree = "<group>"; };
+		803F25A3231E4EEE00DCBBE2 /* OTRDataGetOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTRDataGetOperation.h; sourceTree = "<group>"; };
+		803F25A4231E4EEE00DCBBE2 /* NSData+OTRDATA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+OTRDATA.h"; sourceTree = "<group>"; };
+		803F25A5231E4EEE00DCBBE2 /* OTRDataIncomingTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTRDataIncomingTransfer.h; sourceTree = "<group>"; };
+		803F25A6231E4EEE00DCBBE2 /* OTRHTTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTRHTTPMessage.h; sourceTree = "<group>"; };
+		803F25A7231E4EEE00DCBBE2 /* OTRDataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTRDataHandler.m; sourceTree = "<group>"; };
+		803F25A8231E4EEE00DCBBE2 /* OTRDataTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTRDataTransfer.h; sourceTree = "<group>"; };
+		803F25A9231E4EEE00DCBBE2 /* OTRDataOutgoingTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTRDataOutgoingTransfer.h; sourceTree = "<group>"; };
+		803F25AA231E4EEE00DCBBE2 /* OTRDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTRDataRequest.m; sourceTree = "<group>"; };
+		803F25AB231E4EEE00DCBBE2 /* OTRDataGetOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTRDataGetOperation.m; sourceTree = "<group>"; };
+		803F25AC231E4EEE00DCBBE2 /* OTRFingerprint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTRFingerprint.m; sourceTree = "<group>"; };
+		803F25AD231E4EEE00DCBBE2 /* OTRTLV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTRTLV.h; sourceTree = "<group>"; };
+		803F25AF231E4EEE00DCBBE2 /* OTRCryptoUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTRCryptoUtility.m; sourceTree = "<group>"; };
+		803F25B0231E4EEE00DCBBE2 /* OTRErrorUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTRErrorUtility.h; sourceTree = "<group>"; };
+		803F25B1231E4EEE00DCBBE2 /* OTRCryptoUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTRCryptoUtility.h; sourceTree = "<group>"; };
+		803F25B2231E4EEE00DCBBE2 /* OTRErrorUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTRErrorUtility.m; sourceTree = "<group>"; };
+		803F25C2231E502400DCBBE2 /* gcrypt-mpih-mul2.S.diff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gcrypt-mpih-mul2.S.diff"; sourceTree = "<group>"; };
+		803F25C3231E502400DCBBE2 /* gcrypt-mpih-sub1.S.diff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gcrypt-mpih-sub1.S.diff"; sourceTree = "<group>"; };
+		803F25C4231E502400DCBBE2 /* gcrypt-mpih-add1.S.diff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gcrypt-mpih-add1.S.diff"; sourceTree = "<group>"; };
+		803F25C5231E502400DCBBE2 /* gcrypt-mpih-mul3.S.diff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gcrypt-mpih-mul3.S.diff"; sourceTree = "<group>"; };
+		803F25C6231E502400DCBBE2 /* gcrypt-mpih-mul1.S.diff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gcrypt-mpih-mul1.S.diff"; sourceTree = "<group>"; };
+		803F25C7231E502400DCBBE2 /* gcrypt-disable-tests.diff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gcrypt-disable-tests.diff"; sourceTree = "<group>"; };
+		803F25C8231E502400DCBBE2 /* build-gcrypt.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "build-gcrypt.sh"; sourceTree = "<group>"; };
+		803F25C9231E502400DCBBE2 /* build-otr.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "build-otr.sh"; sourceTree = "<group>"; };
+		803F25CA231E502400DCBBE2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		803F25CB231E502400DCBBE2 /* build-all.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "build-all.sh"; sourceTree = "<group>"; };
+		803F25CC231E502400DCBBE2 /* build-gpg-error.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "build-gpg-error.sh"; sourceTree = "<group>"; };
+		803F25DA231E553D00DCBBE2 /* gcrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gcrypt.h; sourceTree = "<group>"; };
+		803F25DB231E553D00DCBBE2 /* gpg-error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gpg-error.h"; sourceTree = "<group>"; };
+		803F25DC231E553D00DCBBE2 /* gpgrt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gpgrt.h; sourceTree = "<group>"; };
+		803F25DE231E553D00DCBBE2 /* instag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = instag.h; sourceTree = "<group>"; };
+		803F25DF231E553D00DCBBE2 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		803F25E0231E553D00DCBBE2 /* privkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = privkey.h; sourceTree = "<group>"; };
+		803F25E1231E553D00DCBBE2 /* context_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = context_priv.h; sourceTree = "<group>"; };
+		803F25E2231E553D00DCBBE2 /* proto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = proto.h; sourceTree = "<group>"; };
+		803F25E3231E553D00DCBBE2 /* dh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dh.h; sourceTree = "<group>"; };
+		803F25E4231E553D00DCBBE2 /* context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = context.h; sourceTree = "<group>"; };
+		803F25E5231E553D00DCBBE2 /* b64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = b64.h; sourceTree = "<group>"; };
+		803F25E6231E553D00DCBBE2 /* message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message.h; sourceTree = "<group>"; };
+		803F25E7231E553D00DCBBE2 /* serial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = serial.h; sourceTree = "<group>"; };
+		803F25E8231E553D00DCBBE2 /* userstate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = userstate.h; sourceTree = "<group>"; };
+		803F25E9231E553D00DCBBE2 /* auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth.h; sourceTree = "<group>"; };
+		803F25EA231E553D00DCBBE2 /* mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mem.h; sourceTree = "<group>"; };
+		803F25EB231E553D00DCBBE2 /* privkey-t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "privkey-t.h"; sourceTree = "<group>"; };
+		803F25EC231E553D00DCBBE2 /* sm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sm.h; sourceTree = "<group>"; };
+		803F25ED231E553D00DCBBE2 /* tlv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tlv.h; sourceTree = "<group>"; };
+		803F25EF231E553D00DCBBE2 /* libotr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libotr.a; sourceTree = "<group>"; };
+		803F25F0231E553D00DCBBE2 /* libgcrypt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgcrypt.a; sourceTree = "<group>"; };
+		803F25F1231E553D00DCBBE2 /* libgpg-error.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgpg-error.a"; sourceTree = "<group>"; };
+		803F25F5231E560900DCBBE2 /* OTRDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OTRDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		803F257D231E4EE000DCBBE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803F25F3231E553D00DCBBE2 /* libgcrypt.a in Frameworks */,
+				803F25F2231E553D00DCBBE2 /* libotr.a in Frameworks */,
+				803F25F4231E553D00DCBBE2 /* libgpg-error.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		803F2577231E4EE000DCBBE2 = {
+			isa = PBXGroup;
+			children = (
+				803F2582231E4EE000DCBBE2 /* OTRDemo */,
+				803F2581231E4EE000DCBBE2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		803F2581231E4EE000DCBBE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				803F2580231E4EE000DCBBE2 /* OTRDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		803F2582231E4EE000DCBBE2 /* OTRDemo */ = {
+			isa = PBXGroup;
+			children = (
+				803F25D8231E553D00DCBBE2 /* OTRKitDependencies-iOS */,
+				803F25C0231E502400DCBBE2 /* scripts */,
+				803F2595231E4EEE00DCBBE2 /* OTRKit */,
+				803F2583231E4EE000DCBBE2 /* AppDelegate.swift */,
+				803F2585231E4EE000DCBBE2 /* ViewController.swift */,
+				803F2587231E4EE000DCBBE2 /* Main.storyboard */,
+				803F258A231E4EE200DCBBE2 /* Assets.xcassets */,
+				803F258C231E4EE200DCBBE2 /* LaunchScreen.storyboard */,
+				803F258F231E4EE200DCBBE2 /* Info.plist */,
+				803F25F5231E560900DCBBE2 /* OTRDemo-Bridging-Header.h */,
+			);
+			path = OTRDemo;
+			sourceTree = "<group>";
+		};
+		803F2595231E4EEE00DCBBE2 /* OTRKit */ = {
+			isa = PBXGroup;
+			children = (
+				803F2596231E4EEE00DCBBE2 /* OTRKit.m */,
+				803F2597231E4EEE00DCBBE2 /* OTRTLV.m */,
+				803F2598231E4EEE00DCBBE2 /* OTRFingerprint.h */,
+				803F2599231E4EEE00DCBBE2 /* OTRTLVHandler.h */,
+				803F259A231E4EEE00DCBBE2 /* OTRKit.h */,
+				803F259B231E4EEE00DCBBE2 /* OTRData */,
+				803F25AC231E4EEE00DCBBE2 /* OTRFingerprint.m */,
+				803F25AD231E4EEE00DCBBE2 /* OTRTLV.h */,
+				803F25AE231E4EEE00DCBBE2 /* Utility */,
+			);
+			path = OTRKit;
+			sourceTree = "<group>";
+		};
+		803F259B231E4EEE00DCBBE2 /* OTRData */ = {
+			isa = PBXGroup;
+			children = (
+				803F259C231E4EEE00DCBBE2 /* OTRHTTPMessage.m */,
+				803F259D231E4EEE00DCBBE2 /* OTRDataIncomingTransfer.m */,
+				803F259E231E4EEE00DCBBE2 /* NSData+OTRDATA.m */,
+				803F259F231E4EEE00DCBBE2 /* OTRDataOutgoingTransfer.m */,
+				803F25A0231E4EEE00DCBBE2 /* OTRDataTransfer.m */,
+				803F25A1231E4EEE00DCBBE2 /* OTRDataHandler.h */,
+				803F25A2231E4EEE00DCBBE2 /* OTRDataRequest.h */,
+				803F25A3231E4EEE00DCBBE2 /* OTRDataGetOperation.h */,
+				803F25A4231E4EEE00DCBBE2 /* NSData+OTRDATA.h */,
+				803F25A5231E4EEE00DCBBE2 /* OTRDataIncomingTransfer.h */,
+				803F25A6231E4EEE00DCBBE2 /* OTRHTTPMessage.h */,
+				803F25A7231E4EEE00DCBBE2 /* OTRDataHandler.m */,
+				803F25A8231E4EEE00DCBBE2 /* OTRDataTransfer.h */,
+				803F25A9231E4EEE00DCBBE2 /* OTRDataOutgoingTransfer.h */,
+				803F25AA231E4EEE00DCBBE2 /* OTRDataRequest.m */,
+				803F25AB231E4EEE00DCBBE2 /* OTRDataGetOperation.m */,
+			);
+			path = OTRData;
+			sourceTree = "<group>";
+		};
+		803F25AE231E4EEE00DCBBE2 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				803F25AF231E4EEE00DCBBE2 /* OTRCryptoUtility.m */,
+				803F25B0231E4EEE00DCBBE2 /* OTRErrorUtility.h */,
+				803F25B1231E4EEE00DCBBE2 /* OTRCryptoUtility.h */,
+				803F25B2231E4EEE00DCBBE2 /* OTRErrorUtility.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		803F25C0231E502400DCBBE2 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				803F25C1231E502400DCBBE2 /* patches */,
+				803F25C8231E502400DCBBE2 /* build-gcrypt.sh */,
+				803F25C9231E502400DCBBE2 /* build-otr.sh */,
+				803F25CA231E502400DCBBE2 /* README.md */,
+				803F25CB231E502400DCBBE2 /* build-all.sh */,
+				803F25CC231E502400DCBBE2 /* build-gpg-error.sh */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		803F25C1231E502400DCBBE2 /* patches */ = {
+			isa = PBXGroup;
+			children = (
+				803F25C2231E502400DCBBE2 /* gcrypt-mpih-mul2.S.diff */,
+				803F25C3231E502400DCBBE2 /* gcrypt-mpih-sub1.S.diff */,
+				803F25C4231E502400DCBBE2 /* gcrypt-mpih-add1.S.diff */,
+				803F25C5231E502400DCBBE2 /* gcrypt-mpih-mul3.S.diff */,
+				803F25C6231E502400DCBBE2 /* gcrypt-mpih-mul1.S.diff */,
+				803F25C7231E502400DCBBE2 /* gcrypt-disable-tests.diff */,
+			);
+			path = patches;
+			sourceTree = "<group>";
+		};
+		803F25D8231E553D00DCBBE2 /* OTRKitDependencies-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				803F25D9231E553D00DCBBE2 /* include */,
+				803F25EE231E553D00DCBBE2 /* lib */,
+			);
+			path = "OTRKitDependencies-iOS";
+			sourceTree = "<group>";
+		};
+		803F25D9231E553D00DCBBE2 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				803F25DA231E553D00DCBBE2 /* gcrypt.h */,
+				803F25DB231E553D00DCBBE2 /* gpg-error.h */,
+				803F25DC231E553D00DCBBE2 /* gpgrt.h */,
+				803F25DD231E553D00DCBBE2 /* libotr */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		803F25DD231E553D00DCBBE2 /* libotr */ = {
+			isa = PBXGroup;
+			children = (
+				803F25DE231E553D00DCBBE2 /* instag.h */,
+				803F25DF231E553D00DCBBE2 /* version.h */,
+				803F25E0231E553D00DCBBE2 /* privkey.h */,
+				803F25E1231E553D00DCBBE2 /* context_priv.h */,
+				803F25E2231E553D00DCBBE2 /* proto.h */,
+				803F25E3231E553D00DCBBE2 /* dh.h */,
+				803F25E4231E553D00DCBBE2 /* context.h */,
+				803F25E5231E553D00DCBBE2 /* b64.h */,
+				803F25E6231E553D00DCBBE2 /* message.h */,
+				803F25E7231E553D00DCBBE2 /* serial.h */,
+				803F25E8231E553D00DCBBE2 /* userstate.h */,
+				803F25E9231E553D00DCBBE2 /* auth.h */,
+				803F25EA231E553D00DCBBE2 /* mem.h */,
+				803F25EB231E553D00DCBBE2 /* privkey-t.h */,
+				803F25EC231E553D00DCBBE2 /* sm.h */,
+				803F25ED231E553D00DCBBE2 /* tlv.h */,
+			);
+			path = libotr;
+			sourceTree = "<group>";
+		};
+		803F25EE231E553D00DCBBE2 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				803F25EF231E553D00DCBBE2 /* libotr.a */,
+				803F25F0231E553D00DCBBE2 /* libgcrypt.a */,
+				803F25F1231E553D00DCBBE2 /* libgpg-error.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		803F257F231E4EE000DCBBE2 /* OTRDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 803F2592231E4EE200DCBBE2 /* Build configuration list for PBXNativeTarget "OTRDemo" */;
+			buildPhases = (
+				803F257C231E4EE000DCBBE2 /* Sources */,
+				803F257D231E4EE000DCBBE2 /* Frameworks */,
+				803F257E231E4EE000DCBBE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OTRDemo;
+			productName = OTRDemo;
+			productReference = 803F2580231E4EE000DCBBE2 /* OTRDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		803F2578231E4EE000DCBBE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Mahendra Vishwakarma";
+				TargetAttributes = {
+					803F257F231E4EE000DCBBE2 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 803F257B231E4EE000DCBBE2 /* Build configuration list for PBXProject "OTRDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 803F2577231E4EE000DCBBE2;
+			productRefGroup = 803F2581231E4EE000DCBBE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				803F257F231E4EE000DCBBE2 /* OTRDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		803F257E231E4EE000DCBBE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803F25D2231E502400DCBBE2 /* gcrypt-disable-tests.diff in Resources */,
+				803F25CD231E502400DCBBE2 /* gcrypt-mpih-mul2.S.diff in Resources */,
+				803F258E231E4EE200DCBBE2 /* LaunchScreen.storyboard in Resources */,
+				803F25D7231E502400DCBBE2 /* build-gpg-error.sh in Resources */,
+				803F258B231E4EE200DCBBE2 /* Assets.xcassets in Resources */,
+				803F25D4231E502400DCBBE2 /* build-otr.sh in Resources */,
+				803F25D3231E502400DCBBE2 /* build-gcrypt.sh in Resources */,
+				803F25D5231E502400DCBBE2 /* README.md in Resources */,
+				803F25D0231E502400DCBBE2 /* gcrypt-mpih-mul3.S.diff in Resources */,
+				803F2589231E4EE000DCBBE2 /* Main.storyboard in Resources */,
+				803F25CF231E502400DCBBE2 /* gcrypt-mpih-add1.S.diff in Resources */,
+				803F25D6231E502400DCBBE2 /* build-all.sh in Resources */,
+				803F25CE231E502400DCBBE2 /* gcrypt-mpih-sub1.S.diff in Resources */,
+				803F25D1231E502400DCBBE2 /* gcrypt-mpih-mul1.S.diff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		803F257C231E4EE000DCBBE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803F25B3231E4EEF00DCBBE2 /* OTRKit.m in Sources */,
+				803F25BD231E4EEF00DCBBE2 /* OTRFingerprint.m in Sources */,
+				803F25BB231E4EEF00DCBBE2 /* OTRDataRequest.m in Sources */,
+				803F2586231E4EE000DCBBE2 /* ViewController.swift in Sources */,
+				803F25BF231E4EEF00DCBBE2 /* OTRErrorUtility.m in Sources */,
+				803F25B6231E4EEF00DCBBE2 /* OTRDataIncomingTransfer.m in Sources */,
+				803F25BC231E4EEF00DCBBE2 /* OTRDataGetOperation.m in Sources */,
+				803F25B4231E4EEF00DCBBE2 /* OTRTLV.m in Sources */,
+				803F25B8231E4EEF00DCBBE2 /* OTRDataOutgoingTransfer.m in Sources */,
+				803F25B9231E4EEF00DCBBE2 /* OTRDataTransfer.m in Sources */,
+				803F25BA231E4EEF00DCBBE2 /* OTRDataHandler.m in Sources */,
+				803F2584231E4EE000DCBBE2 /* AppDelegate.swift in Sources */,
+				803F25BE231E4EEF00DCBBE2 /* OTRCryptoUtility.m in Sources */,
+				803F25B7231E4EEF00DCBBE2 /* NSData+OTRDATA.m in Sources */,
+				803F25B5231E4EEF00DCBBE2 /* OTRHTTPMessage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		803F2587231E4EE000DCBBE2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				803F2588231E4EE000DCBBE2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		803F258C231E4EE200DCBBE2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				803F258D231E4EE200DCBBE2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		803F2590231E4EE200DCBBE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		803F2591231E4EE200DCBBE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		803F2593231E4EE200DCBBE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OTRDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OTRDemo/OTRKitDependencies-iOS/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Mahendra.OTRDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/mahendra/Documents/Mahendra/OTRDemo/OTRDemo/OTRDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		803F2594231E4EE200DCBBE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OTRDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OTRDemo/OTRKitDependencies-iOS/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Mahendra.OTRDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/mahendra/Documents/Mahendra/OTRDemo/OTRDemo/OTRDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		803F257B231E4EE000DCBBE2 /* Build configuration list for PBXProject "OTRDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				803F2590231E4EE200DCBBE2 /* Debug */,
+				803F2591231E4EE200DCBBE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		803F2592231E4EE200DCBBE2 /* Build configuration list for PBXNativeTarget "OTRDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				803F2593231E4EE200DCBBE2 /* Debug */,
+				803F2594231E4EE200DCBBE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 803F2578231E4EE000DCBBE2 /* Project object */;
+}
